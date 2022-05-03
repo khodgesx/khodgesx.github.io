@@ -25,6 +25,7 @@
     font-family: 'Press Start 2P', cursive;
     color: rgb(154, 181, 223);
     background-color: white;
+    font-size: 2vh;
 }
 h1{
     font-family: 'Monoton', sans-serif;
@@ -55,7 +56,7 @@ h1:hover:first-letter, .skills-section h2:hover:first-letter{
 }
 #skills-section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     border: dashed 2px rgb(154, 181, 223);
     padding:15px;
 }
@@ -73,8 +74,10 @@ h1:hover:first-letter, .skills-section h2:hover:first-letter{
     line-height: 4.5vh;
     font-size: 3vh;
 }
-#site-links, #project-links{
+#site-links{
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .circle{
     height:50px;
@@ -124,7 +127,7 @@ a{
 }
 
 #pour-pair-div, #recipe-div, #restaurant-div, #trashure-div {
-    height: 80vh;
+    height: auto;
     width: 100%;
     background-color: rgb(238, 187, 182);
     font-size: 20vh;
@@ -132,7 +135,7 @@ a{
 }
 #pour-pair-div h3, #recipe-div h3, #restaurant-div h3, #trashure-div h3{
     font-family: 'Montserrat', sans-serif;
-    font-size: 3vh;
+    font-size: 2vh;
     padding:0 5px;
     text-align: center;
 }
@@ -148,6 +151,10 @@ a{
     display: block;
     margin: 10px auto;
     text-align: center;
+}
+#proj-divs a{
+    font-size: 4vh;
+    letter-spacing: 2px;
 }
 #pour-pair-div a:hover, #recipe-div a:hover, #restaurant-div a:hover, #trashure-div a:hover{
     color:blue;
@@ -185,12 +192,57 @@ a{
 }
 footer a, footer ul{
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: space-around;
     color:blue;
     list-style-type: none;
+    font-size: 2vh;
+}
+footer div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style-type: none;
+    margin: 10px auto 20px;
+    text-align: center;
 }
 
+
+@media screen and (min-width:480px){
+    #proj-divs a{
+        font-size: 6vh;
+    }
+    .skills-section{
+        height: auto;
+    }
+    #site-links{
+        text-align: center;
+        display: block;
+    }
+
+    #skills-section{
+        display: flex;
+        justify-content: space-between;
+        line-height: 4vh;
+    }
+    #skills-one p, #skills-two p{
+        line-height: 8vh;
+    }
+    #pour-pair-div, #recipe-div, #restaurant-div, #trashure-div {
+        height: 80vh;
+        width: 100%;
+        background-color: rgb(238, 187, 182);
+        margin: 10px auto;
+    }
+    #pour-pair-div h3, #recipe-div h3, #restaurant-div h3, #trashure-div h3{
+        font-size: 3vh;
+    }
+    footer a, footer ul{
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        color:blue;
+        list-style-type: none;
+        font-size: 2.5vh;
+    }
+}
 
 
 
