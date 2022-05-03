@@ -4,6 +4,9 @@
  *{
     cursor:url('./images/pizza-color.png'),auto;
  } 
+ body{
+     margin: 5px 10px;
+ }
 #welcome-section{
     border: 10px dashed pink;
     height: 15vh;
@@ -160,7 +163,7 @@ a{
     color:blue;
 }    
 #pour-pair-div img, #recipe-div img, #restaurant-div img, #trashure-div img{
-    height: 40vh;
+    height: 35vh;
     width:auto;
     display: block;
     margin: 8px auto 0 auto;
@@ -208,6 +211,9 @@ footer div{
 @media screen and (min-width:480px){
     #proj-divs a{
         font-size: 6vh;
+    }
+    #pour-pair-div img, #recipe-div img, #restaurant-div img, #trashure-div img{
+        height: 40vh;
     }
     .skills-section{
         height: auto;
