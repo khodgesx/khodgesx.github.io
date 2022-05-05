@@ -75,7 +75,7 @@ h1:hover:first-letter, .skills-section h2:hover:first-letter{
     padding:15px;
     letter-spacing: 0.5px;
     line-height: 4.5vh;
-    font-size: 2.4vh;
+    font-size: 2vh;
 }
 #site-links{
     text-align: center;
@@ -118,7 +118,7 @@ a{
 }
 #bio p{
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     border: dashed 2px rgb(207, 128, 18);
     padding:15px;
 }
