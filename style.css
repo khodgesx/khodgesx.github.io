@@ -97,6 +97,9 @@ h1:hover:first-letter, .skills-section h2:hover:first-letter{
     border-radius: 50%;
     margin: 5px auto 15px auto;
 }
+#kelly:hover{
+    border: solid 3px rgb(154, 181, 223);
+}
 
 .circle:hover{
     background-color:rgb(236, 162, 155);
