@@ -171,7 +171,7 @@ a{
     border: solid 1px rgb(8, 7, 7);
 }
 #img-hover:hover{
-    border: solid 5px blue;
+    border: solid 5px rgb(154, 181, 223);
 }
 #resume{
     border: solid 1px black;
